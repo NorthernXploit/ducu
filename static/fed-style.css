@@ -1,0 +1,31 @@
+.bg-federal {
+  background-color: #121a2f;
+  border: 1px solid #005fcc;
+  color: #e0e0e0;
+}
+
+.list-group-item, .form-control, .card {
+  background-color: #1e273a;
+  border-color: #334466;
+  color: #ffffff;
+}
+
+.form-control:focus {
+  background-color: #1e273a;
+  border-color: #005fcc;
+  color: white;
+}
+
+.btn-outline-primary {
+  border-color: #005fcc;
+  color: #0099ff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #005fcc;
+  color: white;
+}
+
+.text-primary { color: #0099ff; }
+.text-warning { color: #ffcc00; }
+.text-info { color: #66ccff; }
