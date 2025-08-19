@@ -1,0 +1,21 @@
+# fly.toml
+app = "dorkgen"
+
+[http_service]
+  internal_port = 8080    # This must match what Gunicorn uses
+  force_https = true
+
+[env]
+  PORT = "8080"           # Fly.io will override this, but good to set
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = "80"
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = "443"
